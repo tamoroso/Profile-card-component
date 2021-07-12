@@ -10,7 +10,11 @@
 }
 
 .attribution{
+    width: 100vw;
     text-align: center;
-    position: relative;
-    bottom : 80px
+    display: inline-block;
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+    transform: translateX(50%);
 }

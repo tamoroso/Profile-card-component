@@ -2,13 +2,14 @@
 @use '../utilities/responsive-mixins' as *;
 
 body{
+    height: 100vh;
     background-color:$primary-color-1 ;
     background-image: url("../../images/bg-pattern-top.svg"), url("../../images/bg-pattern-bottom.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position:  top calc(100% - 350px) left calc(100% - 700px) , bottom calc(100% - 350px) right calc(100% - 700px);
+    background-position:  top -500px left -280px , bottom -600px right -250px;
     transition: ease all .5s ;
     @include mobile-only{
-        background-position: top calc(100% - 380px) left calc(100% - 150px) , bottom calc(100% - 350px) right calc(100% - 120px);
+        background-position: top -500px left -800px , bottom -600px right -700px;
     }
 }
 

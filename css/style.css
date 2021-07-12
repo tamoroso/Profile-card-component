@@ -1,22 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 body {
+  height: 100vh;
   background-color: #19a2ae;
   background-image: url("../../images/bg-pattern-top.svg"), url("../../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: top calc(100% - 350px) left calc(100% - 700px), bottom calc(100% - 350px) right calc(100% - 700px);
+  background-position: top -500px left -280px, bottom -600px right -250px;
   transition: ease all 0.5s;
 }
 @media screen and (max-width: 380px) {
   body {
-    background-position: top calc(100% - 380px) left calc(100% - 150px), bottom calc(100% - 350px) right calc(100% - 120px);
+    background-position: top -500px left -800px, bottom -600px right -700px;
   }
 }
 
 .card {
   height: 370px;
   width: 330px;
-  margin: 50vh auto 0 auto;
-  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 1em;
   background-image: url("../../images/bg-pattern-card.svg");
@@ -82,9 +85,13 @@ body {
 }
 
 .attribution {
+  width: 100vw;
   text-align: center;
-  position: relative;
-  bottom: 80px;
+  display: inline-block;
+  position: absolute;
+  right: 50%;
+  bottom: 10px;
+  transform: translateX(50%);
 }
 
 /*# sourceMappingURL=style.css.map */

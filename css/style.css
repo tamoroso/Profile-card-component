@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  background-color: #19a2ae;
+  background-image: url("../../images/bg-pattern-top.svg"), url("../../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top calc(100% - 350px) left calc(100% - 700px), bottom calc(100% - 350px) right calc(100% - 700px);
+  transition: ease all 0.5s;
+}
+@media screen and (max-width: 380px) {
+  body {
+    background-position: top calc(100% - 380px) left calc(100% - 150px), bottom calc(100% - 350px) right calc(100% - 120px);
+  }
+}
+
+.card {
+  height: 370px;
+  width: 330px;
+  margin: 50vh auto 0 auto;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 1em;
+  background-image: url("../../images/bg-pattern-card.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  color: #969696;
+  box-shadow: 0px 100px 200px -60px #2d3248;
+}
+.card__profile-pic {
+  background-color: white;
+  border: solid 0.3em white;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
+  margin-bottom: 1em;
+}
+.card__name {
+  display: flex;
+  margin: 0 0.3em 0.3em 0.3em;
+  align-items: center;
+  justify-content: center;
+}
+.card__name--bold {
+  font-weight: 700;
+  color: black;
+}
+.card__city {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  font-size: 14px;
+}
+.card__infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 1.5em auto;
+  padding: 1.7em 2em;
+  border-top: solid gainsboro 1px;
+}
+.card__infos--bold {
+  font-weight: 700;
+  color: black;
+}
+.card__infos--light {
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #969696;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.attribution {
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */

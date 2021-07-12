@@ -1,0 +1,16 @@
+@use '../base/typography' as *;
+@use '../utilities/variables' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: $font-family;
+}
+
+.attribution{
+    text-align: center;
+    position: relative;
+    bottom : 80px
+}

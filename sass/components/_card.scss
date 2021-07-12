@@ -1,0 +1,65 @@
+@use '../base/typography' as *;
+@use '../utilities/variables' as *;
+
+.card{
+    height: 370px;
+    width: 330px;
+    margin: 50vh auto 0 auto;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 1em;
+    background-image: url("../../images/bg-pattern-card.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    font-size: $body-font-size;
+    color: $neutral-color;
+    box-shadow: 0px 100px 200px -60px $primary-color-2;
+    &__profile-pic{
+        background-color: white;
+        border : solid 0.3em white;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto ;
+        margin-right: auto ;
+        margin-top: 25%;
+        margin-bottom: 1em;
+    }
+    &__name{
+        display : flex;
+        margin: 0 0.3em 0.3em 0.3em;
+        align-items: center;
+        justify-content: center;
+        &--bold{
+            font-weight:$bold ;
+            color: black;
+        }
+    }
+    &__city{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        width: fit-content;
+        font-size: 14px;
+    }
+    &__infos{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 1.5em auto;
+        padding: 1.7em 2em;
+        border-top: solid gainsboro 1px;
+        &--bold{
+            font-weight:$bold ;
+            color : black;
+        }
+        &--light{
+            font-weight:$regular;
+            font-size: $small;
+            letter-spacing: 0.2em;
+            color: $neutral-color; 
+        }
+
+    }
+}
+
